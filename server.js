@@ -4,7 +4,7 @@ const app = express();
 
 //Routes
 app.use('/', require('./routes/index'));
-app.use('/', require('./routes/users'))
+app.use('/', require('./routes/users'));
 
 const PORT = process.env.PORT || 5000;
 
