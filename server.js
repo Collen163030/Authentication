@@ -2,7 +2,9 @@ const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const app = express();
 const ejs = require('express-ejs-layouts');
+const passport = require('passport')
 
+require('./config/passport')(passport);
 //Database
 const mongoose = require('mongoose');
 const db = require('./config/keys').MongoURI;
@@ -17,6 +19,8 @@ app.set('view engine', 'ejs');
 //body-parser
 app.use(express.urlencoded({extended: false}))
 
+app.use(passport.initialize());
+app.use(passport.session())
 //Routes
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));

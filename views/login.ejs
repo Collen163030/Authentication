@@ -2,6 +2,7 @@
     <div class="col-md-6 m-auto">
         <div class="card card-body">
             <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>LogIn</h1>
+            <%- include ('./partials/messages') %>
             <form action="/users/register" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -14,7 +15,7 @@
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" class="form-control"
-                        placeholder="Create Passowrd" />
+                        placeholder="Enter Passowrd" />
                 </div>
                 <button class="btn btn-primary btn-block">LogIn</button>
             </form>
