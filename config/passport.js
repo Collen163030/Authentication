@@ -1,4 +1,4 @@
-const LocalStrategy = require('passport-local');
+const LocalStrategy = require('passport-local').Strategy;
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const User = require('../models/User');
@@ -10,7 +10,7 @@ module.exports = function(passport){
                 if(!user){
                     return done(null, false, {message: 'Email is not registered'})
                 }
-                bcrypt.compare(password, User.password, (err, isMatch)=>{
+                bcrypt.compare(password, user.password, (err, isMatch)=>{
                     if(err) throw err;
                     if(isMatch){
                         return done(null, user)
@@ -21,7 +21,7 @@ module.exports = function(passport){
             })
             .catch((err)=> console.log(err))
         })
-    )
+    );
     passport.serializeUser((user, done) => {
         done(null, user.id)
     })
