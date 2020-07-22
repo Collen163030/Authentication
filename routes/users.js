@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
+const jwt = require('jsonwebtoken');
 
 const User = require('../models/User');
 
@@ -62,6 +63,11 @@ router.post('/register', (req, res) => {
                         bcrypt.hash(newUser.password, salt, (err, hash) => {
                             if (err) throw err;
                             newUser.password = hash;
+                        // jwt.sign({id: newUser._id}, 'secretkey', (err, token) => {
+                        //     res.json({
+                        //         token
+                        //     });
+                        // })
                             newUser.save()
                                 .then(user => {
                                     req.flash('success_msg', 'Your are now registered, You can log in')
@@ -86,7 +92,7 @@ router.post('/login', (req, res, next) => {
 
 //logout handle
 
-router.get('/logout', (req,res,) => {
+router.get('/logout', (req, res,) => {
     req.logout();
     req.flash('success_msg', 'You are successfuly logged out');
     res.redirect('/users/login')
