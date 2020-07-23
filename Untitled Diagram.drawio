@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-07-23T11:06:21.924Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="diq-QWGfJN4VZA8DqeUE" version="13.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-07-23T11:16:47.456Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="u_87AhzGuzHURAX0c344" version="13.5.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1355" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1355" dy="774" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -30,6 +30,11 @@
             <mxPoint x="10" y="-12" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-37" value="Validates credentials with passportjs&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rNV-MhIYkYrfjyeAV_7H-12">
+          <mxGeometry x="-0.8998" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="rNV-MhIYkYrfjyeAV_7H-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="rNV-MhIYkYrfjyeAV_7H-15">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="290" y="320" as="sourcePoint" />
@@ -45,42 +50,72 @@
             <mxPoint x="61" y="70" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rNV-MhIYkYrfjyeAV_7H-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rNV-MhIYkYrfjyeAV_7H-7">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="310" y="320" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="rNV-MhIYkYrfjyeAV_7H-20" value="Validates Credentiials" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rNV-MhIYkYrfjyeAV_7H-19">
-          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
-            <mxPoint x="-1" y="-1" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="rNV-MhIYkYrfjyeAV_7H-7" value="Sign In" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="230" y="230" width="120" height="80" as="geometry" />
+          <mxGeometry x="230" y="190" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="rNV-MhIYkYrfjyeAV_7H-10" value="Sign Up" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="450" y="230" width="120" height="80" as="geometry" />
+          <mxGeometry x="450" y="200" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="rNV-MhIYkYrfjyeAV_7H-15" value="Redirects to LogIn with an alert message of what went wrong" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="460" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="rNV-MhIYkYrfjyeAV_7H-22" value="" style="endArrow=classic;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="rNV-MhIYkYrfjyeAV_7H-10">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="510" y="170" as="sourcePoint" />
-            <mxPoint x="450" y="170" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="510" y="220" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="310" y="465" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rNV-MhIYkYrfjyeAV_7H-23" value="" style="endArrow=none;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="170" as="sourcePoint" />
-            <mxPoint x="510" y="170" as="targetPoint" />
+            <mxPoint x="400" y="150" as="sourcePoint" />
+            <mxPoint x="510" y="150" as="targetPoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rNV-MhIYkYrfjyeAV_7H-25" value="Redirects to Dashboard" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="40" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-26" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rNV-MhIYkYrfjyeAV_7H-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="320" as="sourcePoint" />
+            <mxPoint x="560" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-27" value="Successful registration" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rNV-MhIYkYrfjyeAV_7H-26">
+          <mxGeometry x="-0.2607" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-28" value="Redirects to Login" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="510" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-29" value="Redirects you to Dashboard" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="510" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-30" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rNV-MhIYkYrfjyeAV_7H-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="460" as="sourcePoint" />
+            <mxPoint x="570" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-31" value="Correct credentials" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rNV-MhIYkYrfjyeAV_7H-30">
+          <mxGeometry x="-0.2857" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-32" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="rNV-MhIYkYrfjyeAV_7H-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="150" as="sourcePoint" />
+            <mxPoint x="540" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-34" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rNV-MhIYkYrfjyeAV_7H-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="239.99999999999997" as="sourcePoint" />
+            <mxPoint x="716" y="322" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-35" value="Unsuccessful registrationt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rNV-MhIYkYrfjyeAV_7H-34">
+          <mxGeometry x="-0.2683" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rNV-MhIYkYrfjyeAV_7H-36" value="Redirects to SignUp with an alert message of what went wrong" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="687" y="328" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
